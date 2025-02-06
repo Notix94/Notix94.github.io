@@ -1,0 +1,1 @@
+<p>votre formulaire a bien été pris en compte, nous vous remercions</p>
