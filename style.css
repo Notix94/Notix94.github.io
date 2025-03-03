@@ -51,23 +51,33 @@ nav li:hover {
 }
 .card-front,
 .card-back,
-.card-bdd {
+.card-bdd,
+.card-game,
+.card-ai {
   padding: 15px;
   border: 1px solid #be5cfd51;
-  max-width: 20%;
+  max-width: 100%;
   background-color: #301c3b;
   border-radius: 10%;
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
+  margin: 0.5%;
 }
+
 .card-front:hover,
 .card-back:hover,
-.card-bdd:hover {
+.card-bdd:hover,
+.card-game:hover,
+.card-ai:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px #d19dff;
   transition: all 0.3s ease-in-out;
 }
+.card-ai {
+  grid-column: span 2; /* Cette carte occupe 2 colonnes */
+}
+
 .card-front {
   flex-direction: column;
   justify-content: center; /* Centre horizontalement */
@@ -81,11 +91,13 @@ nav li:hover {
 }
 
 .conteneur {
-  display: flex;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 60%;
   justify-content: center;
   background-color: #1e1523;
   gap: 1%;
+  margin: 0 auto; /* Centre le conteneur horizontalement */
 }
 #projets,
 #contact,
