@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav>
+      <h2>Ewan_ri</h2>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Section Accueil -->
+    <section id="accueil">
+      <header>
+        <h2>Ewan Riva</h2>
+        <p>
+          Étudiant en 2ème année de BTS en développement web, passionné par la
+          modélisation 3D et la création de jeux vidéo.
+        </p>
+      </header>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+      <h2>Mes Compétences</h2>
+      <div class="conteneur">
+        <div class="card-front">
+          <img src="img/img_comp.png" alt="sseks" />
+          <p>
+            Je développe des interfaces modernes et responsives avec
+            CSS,tailwindcss et JavaScript..
+          </p>
+        </div>
+        <div class="card-back">
+          <p>Je crée des applications backend robustes en PHP, Java et C#.</p>
+        </div>
+        <div class="card-bdd">
+          <p>
+            Je pratique la gestion de bases de données relationnelles avec
+            PostgreSQL et MySQL.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <h2>Mes Projets</h2>
+
+      <!-- Carrousel Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="lazy-image" src="img/img_comp.png" alt="Image 1" />
+            <h2>Projet 1 : Application de gestion de tâches</h2>
+            <p>
+              Une application pour gérer des tâches quotidiennes avec des
+              fonctionnalités d'ajout, suppression et modification.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="placeholder.jpg" alt="Image 2" />
+            <h2>Projet 2 : Portfolio en ligne</h2>
+            <p>
+              Un portfolio où je présente mes projets de développement web et
+              mes compétences.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <h2>Projet 3 : Jeu en JavaScript</h2>
+            <p>Un petit jeu en JavaScript utilisant Canvas.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Projet 4 : Jeu en JavaScript</h3>
+            <p>Un petit jeu en JavaScript utilisant Canvas.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Projet 5 : Jeu en JavaScript</h3>
+            <p>Un petit jeu en JavaScript utilisant Canvas.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Projet 6 : Jeu en JavaScript</h3>
+            <p>Un petit jeu en JavaScript utilisant Canvas.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Projet 7 : Jeu en JavaScript</h3>
+            <p>Un petit jeu en JavaScript utilisant Canvas.</p>
+          </div>
+        </div>
+        <!-- Boutons de navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <p>Retrouvez-moi sur mes réseaux sociaux ou envoyez-moi un email.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/ewan-riva-70baa3295/"
+          class="social-item linkedin"
+        >
+          <img src="img/Linkedin.png" alt="Linkedin" />
+        </a>
+
+        <a href="https://github.com/Notix94" class="social-item github">
+          <img src="img/GitHub.png" alt="GitHub" />
+        </a>
+        <a href="mailto:ewanriva6@gmail.com" class="email"
+          >ewanriva6@gmail.com</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 - Mon Portfolio</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Lien vers ton script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
