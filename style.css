@@ -22,6 +22,7 @@ header h2 {
   scale: 1.3;
   margin-bottom: 1%;
 }
+
 nav {
   /*section nav*/
   display: flex;
@@ -32,7 +33,10 @@ nav {
 nav h2 {
   margin-left: 10%;
 }
-
+nav li:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
 #accueil {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -60,7 +64,9 @@ nav h2 {
 .card-front:hover,
 .card-back:hover,
 .card-bdd:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px #d19dff;
+  transition: all 0.3s ease-in-out;
 }
 .card-front {
   flex-direction: column;
@@ -128,6 +134,7 @@ footer {
   justify-content: center; /* Centre horizontalement */
   text-align: center; /* Centre le texte */
   transition: transform 0.3s ease-in-out;
+  background-color: #301c3b;
 }
 .lazy-image {
   position: absolute;
