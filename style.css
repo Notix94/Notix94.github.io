@@ -167,6 +167,9 @@ footer {
 #contact {
   text-align: center;
 }
+.swiper-container {
+  position: relative;
+}
 .swiper {
   max-width: 45%;
 }
@@ -203,10 +206,10 @@ footer {
   color: #be5cfd51 !important; /* Couleur des flèches */
 }
 .swiper-button-next {
-  right: -1px !important;
+  right: 25% !important;
 }
 .swiper-button-prev {
-  left: -1px !important;
+  left: 25% !important;
 }
 .social-links {
   display: flex;
