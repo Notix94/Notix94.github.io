@@ -1,9 +1,9 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden; /* Empêche le défilement horizontal */
+  background: linear-gradient(to bottom, #18111b, #291f43);
 }
 body {
-  background-color: #18111b;
   color: #ecd9fa;
   font-family: "Noto Sans Syriac";
   font-size: 18px;
@@ -14,7 +14,6 @@ body h2 {
   font-size: 20px;
 }
 header {
-  background-color: #18111b;
   text-align: center;
 }
 header h2 {
@@ -25,7 +24,7 @@ header h2 {
 nav {
   /*section nav*/
   display: flex;
-  background-color: #18111b;
+
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -41,7 +40,6 @@ nav li:hover {
   margin-bottom: 5%;
 }
 #competences h2 {
-  background-color: #18111b;
   margin-bottom: 3%;
 }
 #projets h2 {
@@ -61,6 +59,8 @@ nav li:hover {
   align-items: center;
   transition: transform 0.3s ease-in-out;
   margin: 0.5%;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
 }
 
 .card-front:hover,
@@ -96,6 +96,8 @@ nav li:hover {
   text-align: left;
   grid-column: span 2; /* Cette carte occupe 2 colonnes */
   flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
 }
 .user-div,
 .rbt-div {
@@ -129,14 +131,13 @@ nav li:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   max-width: 60%;
   justify-content: center;
-  background-color: #18111b;
+
   gap: 1%;
   margin: 0 auto; /* Centre le conteneur horizontalement */
 }
 #projets,
 #contact,
 footer {
-  background-color: #18111b;
   margin-top: 4%;
 }
 
@@ -184,6 +185,16 @@ footer {
   text-align: center; /* Centre le texte */
   transition: transform 0.3s ease-in-out;
   background-color: #1e1523;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .lazy-image {
   position: absolute;
@@ -204,6 +215,12 @@ footer {
 .swiper-button-prev,
 .swiper-button-next {
   color: #be5cfd51 !important; /* Couleur des flèches */
+  transition: transform 0.3s ease-in-out;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.2);
+  color: #bf5cfd62 !important; /* Couleur des flèches */
 }
 .swiper-button-next {
   right: 25% !important;
