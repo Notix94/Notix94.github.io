@@ -8,6 +8,10 @@ body {
   font-family: "Noto Sans Syriac";
   font-size: 18px;
 }
+
+invisible {
+  opacity: 0;
+}
 body h2 {
   font-family: "Noto Sans Syriac";
   font-weight: 700;
@@ -39,6 +43,19 @@ nav li:hover {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.veilleTech,
+.stage {
+  transition: transform 0.3s ease-in-out;
+  animation: fadeIn 3s forwards;
+}
+.veilleTech,
+.stage h2,
+h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 1%;
+}
+
 #competences h2 {
   margin-bottom: 3%;
 }
@@ -196,6 +213,17 @@ footer {
     opacity: 1;
   }
 }
+.veille-image {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 10px;
+}
 .lazy-image {
   position: absolute;
   opacity: 0;
@@ -208,10 +236,13 @@ footer {
   border-radius: 10px;
   filter: blur(5px) hue-rotate(260deg) brightness(0.6);
 }
+
 .swiper-slide:hover .lazy-image {
   opacity: 1; /* Afficher l'image au survol */
 }
-
+.swiper-slide:hover .veille-image {
+  opacity: 1; /* Afficher l'image au survol */
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: #be5cfd51 !important; /* Couleur des flèches */
@@ -247,7 +278,11 @@ footer {
   margin-bottom: 5px;
   transition: transform 0.2s ease-in-out;
 }
-.social-item:hover img {
+#links_Tools img {
+  transition: transform 0.2s ease-in-out;
+}
+.social-item:hover img,
+#links_Tools img:hover {
   transform: scale(1.1); /* Agrandit légèrement l'icône */
 }
 .email {
