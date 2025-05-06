@@ -44,12 +44,15 @@ nav li:hover {
   margin-bottom: 5%;
 }
 .veilleTech,
-.stage {
+.stage,
+.projet {
   transition: transform 0.3s ease-in-out;
   animation: fadeIn 3s forwards;
 }
 .veilleTech,
-.stage h2,
+.stage,
+.projet,
+h2,
 h3 {
   color: rgb(255, 255, 255);
   text-align: center;
